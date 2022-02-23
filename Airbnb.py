@@ -102,4 +102,4 @@ input_df=scaler.transform(input_df)
     
 if st.button('PREDICT'):
     y_outcome=model.predict(input_df)
-    st.write(f' This room will cost you $',y_outcome[0])
+    st.write(f' This room will cost you $',round(y_outcome[0],2))
